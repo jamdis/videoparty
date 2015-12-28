@@ -302,13 +302,32 @@ class Player(QtGui.QMainWindow): #player extends the QT mainWindow Object
                 # this will fix it
                 self.Stop()
 
+from videopartyui import Ui_MainWindow
+__version__ = "0.0.00"
+import sys
+from PyQt4.QtGui import (QMainWindow, QApplication)
+
+
+class MainWindow(QMainWindow, Ui_MainWindow):
+    def __init__(self, parent=None):
+        super(MainWindow, self).__init__(parent)                                         
+        self.setupUi(self)
+
 if __name__ == "__main__": #run the player
-    clipDb = ClipDb()
+    #clipDb = ClipDb()
     app = QtGui.QApplication(sys.argv) #create the QT app
-    player = Player() #instantiate a player
-    player.show() #tell the player to show.  This method is inherited from the QT object
-    player.resize(640, 480) #set the size of the window
-    if sys.argv[1:]: #get the name of a file from the CLI argument to play
-        player.OpenFile(sys.argv[1])
-    sys.exit(app.exec_())
+    frame = MainWindow()
+    frame.show()
+    app.exec_()
+    #player = Player() #instantiate a player
+    #player.show() #tell the player to show.  This method is inherited from the QT object
+    #player.resize(640, 480) #set the size of the window
+    #if sys.argv[1:]: #get the name of a file from the CLI argument to play
+    #    player.OpenFile(sys.argv[1])
+    #sys.exit(app.exec_())
+    app = QtGui.Qapplication(sys.argv)
+    
+
+
+
 

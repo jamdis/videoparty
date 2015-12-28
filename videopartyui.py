@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'videopartyui.ui'
 #
-# Created: Mon Dec 28 12:19:31 2015
+# Created: Mon Dec 28 12:47:09 2015
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -26,33 +26,38 @@ except AttributeError:
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(1099, 540)
+        MainWindow.resize(1300, 700)
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.tableView = QtGui.QTableView(self.centralwidget)
-        self.tableView.setGeometry(QtCore.QRect(30, 30, 511, 421))
+        self.tableView.setGeometry(QtCore.QRect(250, 30, 511, 451))
         self.tableView.setObjectName(_fromUtf8("tableView"))
         self.label = QtGui.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(30, 10, 91, 17))
+        self.label.setGeometry(QtCore.QRect(250, 10, 91, 17))
         self.label.setObjectName(_fromUtf8("label"))
         self.tableView_2 = QtGui.QTableView(self.centralwidget)
-        self.tableView_2.setGeometry(QtCore.QRect(560, 30, 521, 391))
+        self.tableView_2.setGeometry(QtCore.QRect(780, 30, 521, 421))
         self.tableView_2.setObjectName(_fromUtf8("tableView_2"))
         self.label_2 = QtGui.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(560, 430, 121, 17))
+        self.label_2.setGeometry(QtCore.QRect(780, 460, 121, 17))
         self.label_2.setObjectName(_fromUtf8("label_2"))
         self.label_3 = QtGui.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(560, 10, 64, 17))
+        self.label_3.setGeometry(QtCore.QRect(780, 10, 64, 17))
         self.label_3.setObjectName(_fromUtf8("label_3"))
         self.checkBox = QtGui.QCheckBox(self.centralwidget)
-        self.checkBox.setGeometry(QtCore.QRect(560, 450, 94, 22))
+        self.checkBox.setGeometry(QtCore.QRect(780, 480, 94, 22))
         self.checkBox.setObjectName(_fromUtf8("checkBox"))
         self.pushButton = QtGui.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(980, 450, 93, 27))
+        self.pushButton.setGeometry(QtCore.QRect(1200, 470, 93, 27))
         self.pushButton.setObjectName(_fromUtf8("pushButton"))
+        self.frame = QtGui.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(10, 30, 231, 171))
+        self.frame.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame.setObjectName(_fromUtf8("frame"))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1099, 27))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1300, 27))
         self.menubar.setObjectName(_fromUtf8("menubar"))
         self.menuFile = QtGui.QMenu(self.menubar)
         self.menuFile.setObjectName(_fromUtf8("menuFile"))
