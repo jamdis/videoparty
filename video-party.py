@@ -1,9 +1,8 @@
 #! /usr/bin/python
 
 #
-# Qt example for VLC Python bindings
-# Copyright (C) 2009-2010 the VideoLAN team
-#
+# Based on Qt example for VLC Python bindings
+# 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -39,7 +38,7 @@ class ClipDb(object):
     
     def  newClip(self, title, inpoint, outpoint):
         print "adding test record"
-        self.cursor.execute("INSERT INTO clips (title, inpoint outpoint) VALUES('test', 100, 200)")
+        self.cursor.execute("INSERT INTO clips (title, inpoint, outpoint) VALUES('test', 100, 200)")
         self.conn.commit()
         self.conn.close()
         
